@@ -3,9 +3,26 @@
   padding: 0;
 }
 
+ul {
+  list-style-type: disc;
+}
+
 body {
   box-sizing: border-box;
 }
 
 .container {
+  width: 320px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+header {
+  height: 48px;
+  margin: 24px;
+}
+
+main {
+  width: 100%;
+  background-image: url(./images/back-img-mobile.jpg);
 }
