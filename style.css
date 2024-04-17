@@ -27,3 +27,23 @@ main {
   width: 100%;
   background-image: url(./images/back-img-mobile.jpg);
 }
+.benefits-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.motivation-list-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.list-style-disc {
+  position: absolute;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #407bff;
+  border-radius: 50%;
+}
