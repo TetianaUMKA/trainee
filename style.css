@@ -25,10 +25,11 @@ a {
 button {
   display: block;
   font-family: inherit;
+  cursor: pointer;
 }
 
 p {
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 ul {
@@ -46,7 +47,7 @@ header {
   display: flex;
   align-items: center;
   gap: 4px;
-  width: 102px;
+  min-width: 102px;
   font-size: 12px;
   font-weight: 700;
   color: #407bff;
@@ -58,6 +59,7 @@ header {
   width: 40px;
   height: 48px;
 }
+
 .sign-in-container {
   display: flex;
   gap: 8px;
@@ -65,9 +67,15 @@ header {
 
 .sign-in-btn {
   font-size: 16px;
+  line-height: 1.25;
   color: #407bff;
   background-color: transparent;
   border: transparent;
+}
+
+.sign-in-btn:hover,
+.sign-in-btn:focus {
+  color: #ff9d43;
 }
 
 .user-icon {
@@ -80,7 +88,7 @@ h1 {
   margin-bottom: 16px;
   font-weight: 700;
   font-size: 28px;
-  line-height: 1.1;
+  line-height: 1.14;
 }
 
 h2 {
@@ -119,13 +127,25 @@ h2 {
 
 .hero-button {
   width: 240px;
-  height: 36px;
-  padding: 10px 30px;
+  padding: 8px 30px;
   margin: 0 auto;
   color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
   background-color: #407bff;
   border: transparent;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(64, 124, 255, 0.34);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  box-shadow: 0 4px 14px rgba(64, 124, 255, 0.54);
+}
+
+.hero-button:active {
+  box-shadow: none;
 }
 
 .motivation-section {
