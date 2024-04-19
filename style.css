@@ -1,35 +1,138 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-ul {
-  list-style-type: disc;
-  list-style: none;
-}
-
-body {
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  color: #2f2f2f;
+  background-image: url(./images/background-main-page.jpg);
+  background-size: cover;
+}
+
 .container {
-  width: 320px;
-  height: 100vh;
+  width: 280px;
+  padding: 8px 0px 40px;
   margin: 0 auto;
 }
 
-header {
-  height: 48px;
-  margin: 24px;
+a {
+  display: inline-block;
+  font-family: inherit;
 }
 
-main {
-  width: 100%;
-  background-image: url(./images/back-img-mobile.jpg);
+button {
+  display: block;
+  font-family: inherit;
 }
+
+p {
+  line-height: 1.2;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 102px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #407bff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 48px;
+}
+.sign-in-container {
+  display: flex;
+  gap: 8px;
+}
+
+.sign-in-btn {
+  font-size: 16px;
+  color: #407bff;
+  background-color: transparent;
+  border: transparent;
+}
+
+.user-icon {
+  width: 28px;
+  height: 28px;
+  stroke: #2f2f2f;
+}
+
+h1 {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.1;
+}
+
+h2 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.hero {
+  margin-bottom: 40px;
+}
+
+.hero-p {
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.benefits-list {
+  margin-bottom: 24px;
+}
+
 .benefits-list-item {
   display: flex;
   align-items: center;
+  gap: 8px;
+}
+.benefits-list-item:not(last-child) {
+  margin-bottom: 16px;
+}
+
+.benefits-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.hero-button {
+  width: 240px;
+  height: 36px;
+  padding: 10px 30px;
+  margin: 0 auto;
+  color: #ffffff;
+  background-color: #407bff;
+  border: transparent;
+  border-radius: 10px;
+}
+
+.motivation-section {
+  padding: 24px 16px;
+  background-color: #ecf2ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(64, 124, 255, 0.3);
 }
 
 .motivation-list-item {
@@ -37,6 +140,10 @@ main {
   display: flex;
   align-items: center;
   padding-left: 16px;
+}
+
+.motivation-list-item:not(last-child) {
+  margin-bottom: 16px;
 }
 
 .list-style-disc {
