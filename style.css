@@ -4,16 +4,15 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  color: #2f2f2f;
-  background-image: image-set(
-    url(/images/background-main-page.jpg) 1x,
-    url(/images/background-main-page-2x.jpg) 2x
-  );
+html {
+  background: image-set(
+      url(/images/background-main-page.jpg) 1x,
+      url(/images/background-main-page-2x.jpg) 2x
+    )
+    no-repeat center bottom fixed;
   background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
+  /* background-repeat: no-repeat;
+  background-position: bottom; */
 
   @media screen and (min-width: 768px) {
     background-image: image-set(
@@ -30,8 +29,20 @@ body {
   }
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  color: #2f2f2f;
+
+  @media screen and (min-width: 1440px) {
+    background: url(/images/bg-el-main-desktop.svg) no-repeat center center
+      fixed;
+    background-size: contain;
+  }
+}
+
 .container {
   width: 280px;
+  height: 100vh;
   padding: 8px 0px 40px;
   margin: 0 auto;
 
