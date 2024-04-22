@@ -8,15 +8,24 @@ body {
   font-family: "Roboto", sans-serif;
   color: #2f2f2f;
   background-image: image-set(
-    url(./images/background-main-page.jpg) 1x,
-    url(./images/background-main-page-2x.jpg) 2x
+    url(/images/background-main-page.jpg) 1x,
+    url(/images/background-main-page-2x.jpg) 2x
   );
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
 
   @media screen and (min-width: 768px) {
     background-image: image-set(
-      url(./images/background-main-page-tablet.jpg) 1x,
-      url(./images/background-main-page-tablet-2x.jpg) 2x
+      url(/images/background-main-page-tablet.jpg) 1x,
+      url(/images/background-main-page-tablet-2x.jpg) 2x
+    );
+  }
+
+  @media screen and (min-width: 1440px) {
+    background-image: image-set(
+      url(/images/background-main-page-desktop.jpg) 1x,
+      url(/images/background-main-page-desktop-2x.jpg) 2x
     );
   }
 }
@@ -28,12 +37,12 @@ body {
 
   @media screen and (min-width: 768px) {
     width: 704px;
-    padding-top: 16px;
+    padding: 16px 0px 50px;
   }
 
   @media screen and (min-width: 1440px) {
     width: 1216px;
-    padding-top: 12px;
+    padding: 12px 0px 109px;
   }
 }
 
