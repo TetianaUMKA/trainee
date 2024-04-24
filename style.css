@@ -6,8 +6,8 @@
 
 html {
   background: image-set(
-      url(./images/background-main-page.jpg) 1x,
-      url(./images/background-main-page-2x.jpg) 2x
+      url(./images/bg-main-mobile.jpg) 1x,
+      url(./images/bg-main-mobile-2x.jpg) 2x
     )
     no-repeat center bottom fixed;
   background-size: contain;
@@ -16,15 +16,15 @@ html {
 
   @media screen and (min-width: 768px) {
     background-image: image-set(
-      url(./images/background-main-page-tablet.jpg) 1x,
-      url(./images/background-main-page-tablet-2x.jpg) 2x
+      url(./images/bg-main-tablet.jpg) 1x,
+      url(./images/bg-main-tablet-2x.jpg) 2x
     );
   }
 
   @media screen and (min-width: 1440px) {
     background-image: image-set(
-      url(./images/background-main-page-desktop.jpg) 1x,
-      url(./images/background-main-page-desktop-2x.jpg) 2x
+      url(./images/bg-main-desktop.jpg) 1x,
+      url(./images/bg-main-desktop-2x.jpg) 2x
     );
   }
 }
@@ -42,7 +42,7 @@ body {
 
 .container {
   width: 280px;
-  height: 100vh;
+  min-height: 100vh;
   padding: 8px 0px 40px;
   margin: 0 auto;
 
